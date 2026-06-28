@@ -138,15 +138,11 @@ export default function DokumentasiPertemuan() {
     },
     {
       id: 4,
-      title: "Tata Kelola Manajemen Keuangan Mikro & Hukum Syariah",
+      title: "Pentingnya Legalitas Usaha & Administrasi PIRT UMKM",
       narasumber: "Yumas Adi P., S.H., M.Pd.",
       instansi: "Dosen IAI Nurul Huda Situbondo",
-      images: [
-        "/images/foto-kegiatan-2.jpg",
-        "/images/DSC_4170.JPG",
-        "/images/DSC_4207.JPG",
-      ],
-      tag: "Manajemen",
+      images: ["/images/yumas-1p.jpeg"],
+      tag: "Legalitas & Administrasi",
     },
   ];
 

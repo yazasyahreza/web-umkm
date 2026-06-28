@@ -401,7 +401,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden group flex flex-col h-full">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="/images/rapat.jpeg"
+                  src="/images/rapat-1.jpeg"
                   alt="Rapat"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
