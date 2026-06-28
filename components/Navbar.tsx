@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isKegiatanActive = pathname.startsWith("/kegiatan");
   const isBerandaActive = pathname === "/";
@@ -12,12 +14,12 @@ export default function Navbar() {
   return (
     <header className="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group z-50">
           <div className="w-9 h-9 bg-red-600 text-white flex items-center justify-center font-bold text-lg rounded-sm group-hover:bg-red-700 transition-colors">
             A
           </div>
           <span className="font-extrabold text-xl text-gray-900 tracking-tight">
-            RANG
+            ARANG
           </span>
         </Link>
 
@@ -41,7 +43,7 @@ export default function Navbar() {
 
           <div className="relative group">
             <button
-              className={`flex items-center gap-1 transition-colors ${isKegiatanActive ? "text-gray-900 font-semibold" : "hover:text-gray-900"}`}
+              className={`transition-colors ${isKegiatanActive ? "text-gray-900 font-semibold" : "hover:text-gray-900"}`}
             >
               Kegiatan
             </button>
@@ -87,7 +89,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:block z-50">
           <a
             href="https://wa.me/nomor-budianto"
             target="_blank"
@@ -100,7 +102,121 @@ export default function Navbar() {
             Hubungi Kami
           </a>
         </div>
+
+        <button
+          className="md:hidden z-50 p-2 text-gray-900"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? (
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          ) : (
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          )}
+        </button>
       </nav>
+
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-6 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
+          <Link
+            href="/"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`block py-2 ${isBerandaActive ? "text-red-600 font-bold" : "text-gray-700 font-medium"}`}
+          >
+            Beranda
+          </Link>
+          <Link
+            href="/tentang"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block py-2 text-gray-700 font-medium"
+          >
+            Tentang
+          </Link>
+
+          <div className="py-2">
+            <span className="block text-gray-900 font-bold mb-2">Kegiatan</span>
+            <div className="pl-4 space-y-2 border-l-2 border-red-100">
+              <Link
+                href="/kegiatan/jadwal"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-1 text-sm text-gray-600 hover:text-red-600"
+              >
+                Jadwal Pertemuan
+              </Link>
+              <Link
+                href="/kegiatan/dokumentasi"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-1 text-sm text-gray-600 hover:text-red-600"
+              >
+                Dokumentasi Pertemuan
+              </Link>
+              <Link
+                href="/kegiatan/notulen"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-1 text-sm text-gray-600 hover:text-red-600"
+              >
+                Notulen Rapat
+              </Link>
+              <Link
+                href="/kegiatan/materi"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block py-1 text-sm text-gray-600 hover:text-red-600"
+              >
+                Materi Inkubasi
+              </Link>
+            </div>
+          </div>
+
+          <Link
+            href="/narasumber"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block py-2 text-gray-700 font-medium"
+          >
+            Narasumber
+          </Link>
+          <Link
+            href="/galeri"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="block py-2 text-gray-700 font-medium"
+          >
+            Galeri
+          </Link>
+
+          <div className="pt-4 mt-2 border-t border-gray-100">
+            <a
+              href="https://wa.me/nomor-budianto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600 text-white text-center py-3 rounded-md font-bold block w-full shadow-md"
+            >
+              Hubungi Kami via WA
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

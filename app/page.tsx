@@ -65,7 +65,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/kegiatan"
+                href="/kegiatan/dokumentasi"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3.5 px-8 rounded-md transition-all text-sm tracking-wide shadow-lg shadow-red-600/30 text-center"
               >
                 Lihat Kegiatan
@@ -82,18 +82,19 @@ export default function Home() {
 
         <button
           onClick={prevSlide}
-          className="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/30 backdrop-blur-md flex items-center justify-center text-white transition-all z-20"
+          className="hidden md:flex absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/30 backdrop-blur-md items-center justify-center text-white transition-all z-20"
         >
           &#10094;
         </button>
+
         <button
           onClick={nextSlide}
-          className="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/30 backdrop-blur-md flex items-center justify-center text-white transition-all z-20"
+          className="hidden md:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/30 backdrop-blur-md items-center justify-center text-white transition-all z-20"
         >
           &#10095;
         </button>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+        <div className="absolute bottom-24 lg:bottom-32 left-1/2 -translate-x-1/2 flex gap-3 z-20">
           {heroImages.map((_, index) => (
             <button
               key={index}
@@ -277,7 +278,7 @@ export default function Home() {
 
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
             <div>
               <div className="inline-block bg-red-100 text-red-700 font-bold text-xs uppercase tracking-widest px-3 py-1 mb-4 rounded-sm">
                 Fasilitator Ahli
@@ -380,7 +381,7 @@ export default function Home() {
 
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-200 pb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-gray-200 pb-6 gap-4">
             <div>
               <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight border-l-4 border-red-600 pl-4">
                 Berita & Kegiatan Terbaru
@@ -519,7 +520,7 @@ export default function Home() {
               href="https://wa.me/nomor-budianto"
               className="bg-transparent border border-red-400 text-white font-bold py-4 px-10 rounded-md uppercase tracking-wider text-sm hover:bg-red-600 transition-colors flex items-center justify-center gap-2"
             >
-              Hubungi Sekretariat (Bpk. Budianto)
+              Hubungi Kami
             </a>
           </div>
         </div>
