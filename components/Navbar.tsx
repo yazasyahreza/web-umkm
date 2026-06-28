@@ -1,6 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const isKegiatanActive = pathname.startsWith("/kegiatan");
+  const isBerandaActive = pathname === "/";
+
   return (
     <header className="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -14,7 +22,14 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-500">
-          <Link href="/" className="text-gray-900 font-semibold">
+          <Link
+            href="/"
+            className={
+              isBerandaActive
+                ? "text-gray-900 font-semibold"
+                : "hover:text-gray-900 transition-colors"
+            }
+          >
             Beranda
           </Link>
           <Link
@@ -25,7 +40,9 @@ export default function Navbar() {
           </Link>
 
           <div className="relative group">
-            <button className="hover:text-gray-900 transition-colors flex items-center gap-1">
+            <button
+              className={`flex items-center gap-1 transition-colors ${isKegiatanActive ? "text-gray-900 font-semibold" : "hover:text-gray-900"}`}
+            >
               Kegiatan
               <svg
                 className="w-3 h-3"
@@ -44,25 +61,25 @@ export default function Navbar() {
             <div className="absolute top-full left-0 mt-2 w-52 bg-white shadow-xl border border-gray-100 rounded-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link
                 href="/kegiatan/jadwal"
-                className="block px-4 py-3 text-sm hover:bg-gray-50 hover:text-red-600 border-b border-gray-50"
+                className={`block px-4 py-3 text-sm hover:bg-gray-50 border-b border-gray-50 ${pathname === "/kegiatan/jadwal" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
               >
                 Jadwal Pertemuan
               </Link>
               <Link
                 href="/kegiatan/dokumentasi"
-                className="block px-4 py-3 text-sm hover:bg-gray-50 hover:text-red-600 border-b border-gray-50"
+                className={`block px-4 py-3 text-sm hover:bg-gray-50 border-b border-gray-50 ${pathname === "/kegiatan/dokumentasi" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
               >
                 Dokumentasi Pertemuan
               </Link>
               <Link
                 href="/kegiatan/notulen"
-                className="block px-4 py-3 text-sm hover:bg-gray-50 hover:text-red-600 border-b border-gray-50"
+                className={`block px-4 py-3 text-sm hover:bg-gray-50 border-b border-gray-50 ${pathname === "/kegiatan/notulen" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
               >
                 Notulen Rapat
               </Link>
               <Link
                 href="/kegiatan/materi"
-                className="block px-4 py-3 text-sm hover:bg-gray-50 hover:text-red-600"
+                className={`block px-4 py-3 text-sm hover:bg-gray-50 ${pathname === "/kegiatan/materi" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
               >
                 Materi Inkubasi
               </Link>

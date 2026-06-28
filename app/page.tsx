@@ -432,7 +432,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden group flex flex-col h-full">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="/images/presentasi-1.jpeg"
+                  src="/images/adib-2p.jpeg"
                   alt="Presentasi Kejujuran UMKM"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -452,7 +452,7 @@ export default function Home() {
                   goyah dalam membangun kerjasama bisnis.
                 </p>
                 <a
-                  href="/kegiatan/materi"
+                  href="/kegiatan/dokumentasi"
                   className="mt-auto text-xs font-bold text-gray-900 uppercase tracking-wider hover:text-red-600 transition-colors inline-flex items-center gap-1"
                 >
                   Baca Selengkapnya <span className="text-red-600">&rarr;</span>
