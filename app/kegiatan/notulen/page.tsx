@@ -16,7 +16,7 @@ export default function NotulenRapat() {
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         {/* Gunakan salah satu foto rapat yang agak lebar sebagai cover banner */}
         <img
-          src="/images/foto-kegiatan-1.jpg"
+          src="/images/hero-3.jpeg"
           alt="Banner Rapat"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-60"
         />
@@ -50,23 +50,6 @@ export default function NotulenRapat() {
               Pimpinan Rapat: Muhammad Nasrullah
             </p>
           </div>
-
-          <button className="inline-flex items-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-700 font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all border border-gray-200">
-            <svg
-              className="w-4 h-4 text-red-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
-              ></path>
-            </svg>
-            Cetak Dokumen
-          </button>
         </div>
       </section>
 
@@ -214,23 +197,59 @@ export default function NotulenRapat() {
             <h3 className="text-sm font-extrabold text-gray-900 uppercase tracking-widest mb-4 border-l-4 border-red-600 pl-3">
               Momen Rapat
             </h3>
-            {/* Grid Foto - Silakan ganti src dengan file foto rapat yang bos punya */}
+
             <div className="grid grid-cols-2 gap-3">
-              <img
-                src="/images/DSC_4103.JPG"
-                alt="Rapat 1"
-                className="w-full h-24 object-cover rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
-              />
-              <img
-                src="/images/DSC_4159.JPG"
-                alt="Rapat 2"
-                className="w-full h-24 object-cover rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
-              />
-              <img
-                src="/images/DSC_4164.JPG"
-                alt="Rapat 3"
-                className="w-full h-24 object-cover rounded-sm border border-gray-200 hover:opacity-80 transition-opacity col-span-2"
-              />
+              {/* Foto 1 */}
+              <Link
+                href="/images/rapat-1.jpeg"
+                target="_blank"
+                className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/images/rapat-1.jpeg"
+                  alt="Rapat 1"
+                  className="w-full h-full object-cover"
+                />
+              </Link>
+
+              {/* Foto 2 */}
+              <Link
+                href="/images/rapat-2.jpeg"
+                target="_blank"
+                className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/images/rapat-2.jpeg"
+                  alt="Rapat 2"
+                  className="w-full h-full object-cover"
+                />
+              </Link>
+
+              {/* Foto 3 */}
+              <Link
+                href="/images/rapat-3.jpeg"
+                target="_blank"
+                className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/images/rapat-3.jpeg"
+                  alt="Rapat 3"
+                  className="w-full h-full object-cover"
+                />
+              </Link>
+
+              {/* Foto 4 */}
+              <Link
+                href="/images/rapat-4.jpeg"
+                target="_blank"
+                className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
+              >
+                <img
+                  src="/images/rapat-4.jpeg"
+                  alt="Rapat 4"
+                  className="w-full h-full object-cover"
+                />
+              </Link>
             </div>
           </div>
 

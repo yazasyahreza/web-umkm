@@ -155,29 +155,30 @@ export default function DokumentasiPertemuan() {
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         <img
           src="/images/hero-3.jpeg"
-          alt="Banner Dokumentasi"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          alt="Banner Rapat"
+          className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/40 to-gray-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
       </section>
 
       <section className="relative z-10 -mt-16 container mx-auto px-6 max-w-7xl mb-16">
-        <div className="bg-white rounded-md shadow-xl shadow-gray-200/50 border-t-4 border-t-red-600 border-x border-b border-gray-100 p-8 md:p-12 relative overflow-hidden">
-          <div className="inline-block bg-red-100 text-red-700 font-bold text-xs uppercase tracking-widest px-3 py-1 mb-4 rounded-sm">
+        <div className="bg-white rounded-md shadow-xl shadow-gray-200/50 border-t-4 border-t-red-600 border-x border-b border-gray-100 p-6 md:p-8 relative overflow-hidden">
+          <div className="inline-block bg-red-100 text-red-700 font-bold text-xs uppercase tracking-widest px-3 py-1 mb-3 rounded-sm">
             Arsip Visual
           </div>
-          <h1 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+
+          <h1 className="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">
             Dokumentasi Pertemuan & Presentasi
           </h1>
-          <p className="text-gray-500 max-w-3xl leading-relaxed mb-8">
+
+          <p className="text-gray-500 w-full leading-relaxed mb-6">
             Kumpulan salinan materi presentasi, modul visual, dan dokumentasi
             kegiatan tatap muka yang dipaparkan langsung oleh para fasilitator
             ahli selama program Inkubasi UMKM Komunitas Arang.
           </p>
-
           <Link
             href="/kegiatan/materi"
-            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md transition-all shadow-md shadow-red-600/20"
+            className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-sm tracking-wide px-5 py-2.5 rounded-md transition-all shadow-md shadow-red-600/20"
           >
             <svg
               className="w-4 h-4"
