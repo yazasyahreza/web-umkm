@@ -207,7 +207,7 @@ export default function Navbar() {
 
           <div className="pt-4 mt-2 border-t border-gray-100">
             <a
-              href="https://wa.me/nomor-budianto"
+              href="https://wa.me/6281333197383"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 text-white text-center py-3 rounded-md font-bold block w-full shadow-md"

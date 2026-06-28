@@ -517,7 +517,8 @@ export default function Home() {
               Lihat Kurikulum
             </a>
             <a
-              href="https://wa.me/nomor-budianto"
+              href="https://wa.me/6281333197383"
+              target="_blank"
               className="bg-transparent border border-red-400 text-white font-bold py-4 px-10 rounded-md uppercase tracking-wider text-sm hover:bg-red-600 transition-colors flex items-center justify-center gap-2"
             >
               Hubungi Kami
