@@ -10,6 +10,7 @@ export default function Navbar() {
 
   const isKegiatanActive = pathname.startsWith("/kegiatan");
   const isBerandaActive = pathname === "/";
+  const isTentangActive = pathname === "/tentang";
 
   return (
     <header className="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
@@ -36,7 +37,11 @@ export default function Navbar() {
           </Link>
           <Link
             href="/tentang"
-            className="hover:text-gray-900 transition-colors"
+            className={
+              isTentangActive
+                ? "text-gray-900 font-semibold"
+                : "hover:text-gray-900 transition-colors"
+            }
           >
             Tentang
           </Link>
@@ -151,7 +156,7 @@ export default function Navbar() {
           <Link
             href="/tentang"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 text-gray-700 font-medium"
+            className={`block py-2 ${isTentangActive ? "text-red-600 font-bold" : "text-gray-700 font-medium"}`}
           >
             Tentang
           </Link>
