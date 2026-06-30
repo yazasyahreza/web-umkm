@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group z-50">
           <img
-            src="/images/logo-arang.webp"
+            src="/images/logo-arang.png"
             alt="Logo Komunitas Arang"
             className="h-10 w-auto object-contain"
           />
