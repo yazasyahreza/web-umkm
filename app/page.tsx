@@ -63,7 +63,7 @@ export default function Home() {
               dokumentasi pengembangan ekonomi lokal.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 w-full mb-10 md:mb-0">
               <a
                 href="/kegiatan/dokumentasi"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3.5 px-8 rounded-md transition-all text-sm tracking-wide shadow-lg shadow-red-600/30 text-center"
