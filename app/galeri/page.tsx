@@ -100,19 +100,19 @@ export default function DokumentasiPertemuan() {
       deskripsi:
         "Momen penyerahan sertifikat kepada para pelaku UMKM yang telah menyelesaikan seluruh rangkaian program pelatihan.",
       images: [
-        "/images/hero-1.jpeg",
-        "/images/hero-2.jpeg",
-        "/images/hero-3.jpeg",
+        "/images/hero-1.webp",
+        "/images/hero-2.webp",
+        "/images/hero-3.webp",
       ],
-      tag: "Dokumentasi dengan narasumber 1",
+      tag: "Dokumentasi Pertemuan 1",
     },
     {
       id: 2,
       title: "Penutupan & Sesi Foto Bersama",
       deskripsi:
         "Semangat kolaborasi antara fasilitator, panitia, dan peserta untuk terus memajukan potensi desa wisata.",
-      images: ["/images/hero-4.jpeg", "/images/hero-5.jpeg"],
-      tag: "Dokumentasi dengan narasumber 2",
+      images: ["/images/hero-4.webp", "/images/hero-5.webp"],
+      tag: "Dokumentasi Pertemuan 2",
     },
   ];
 
@@ -121,7 +121,7 @@ export default function DokumentasiPertemuan() {
       {/* Gambar Banner Atas */}
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         <img
-          src="/images/hero-3.jpeg"
+          src="/images/hero-3.webp"
           alt="Banner Rapat"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-60"
         />

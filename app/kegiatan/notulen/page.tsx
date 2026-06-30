@@ -16,7 +16,7 @@ export default function NotulenRapat() {
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         {/* Gunakan salah satu foto rapat yang agak lebar sebagai cover banner */}
         <img
-          src="/images/hero-3.jpeg"
+          src="/images/hero-3.webp"
           alt="Banner Rapat"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-60"
         />
@@ -201,12 +201,12 @@ export default function NotulenRapat() {
             <div className="grid grid-cols-2 gap-3">
               {/* Foto 1 */}
               <Link
-                href="/images/rapat-1.jpeg"
+                href="/images/rapat-1.webp"
                 target="_blank"
                 className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
               >
                 <img
-                  src="/images/rapat-1.jpeg"
+                  src="/images/rapat-1.webp"
                   alt="Rapat 1"
                   className="w-full h-full object-cover"
                 />
@@ -214,12 +214,12 @@ export default function NotulenRapat() {
 
               {/* Foto 2 */}
               <Link
-                href="/images/rapat-2.jpeg"
+                href="/images/rapat-2.webp"
                 target="_blank"
                 className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
               >
                 <img
-                  src="/images/rapat-2.jpeg"
+                  src="/images/rapat-2.webp"
                   alt="Rapat 2"
                   className="w-full h-full object-cover"
                 />
@@ -227,12 +227,12 @@ export default function NotulenRapat() {
 
               {/* Foto 3 */}
               <Link
-                href="/images/rapat-3.jpeg"
+                href="/images/rapat-3.webp"
                 target="_blank"
                 className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
               >
                 <img
-                  src="/images/rapat-3.jpeg"
+                  src="/images/rapat-3.webp"
                   alt="Rapat 3"
                   className="w-full h-full object-cover"
                 />
@@ -240,12 +240,12 @@ export default function NotulenRapat() {
 
               {/* Foto 4 */}
               <Link
-                href="/images/rapat-4.jpeg"
+                href="/images/rapat-4.webp"
                 target="_blank"
                 className="block w-full h-24 overflow-hidden rounded-sm border border-gray-200 hover:opacity-80 transition-opacity"
               >
                 <img
-                  src="/images/rapat-4.jpeg"
+                  src="/images/rapat-4.webp"
                   alt="Rapat 4"
                   className="w-full h-full object-cover"
                 />

@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const heroImages = [
-    "/images/hero-1.jpeg",
-    "/images/hero-2.jpeg",
-    "/images/hero-3.jpeg",
+    "/images/hero-1.webp",
+    "/images/hero-2.webp",
+    "/images/hero-3.webp",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -252,7 +252,7 @@ export default function Home() {
 
                   <div className="relative h-full w-full rounded-md border-4 border-white overflow-hidden shadow-lg z-10 bg-gray-100">
                     <img
-                      src="/images/profil-1.jpeg"
+                      src="/images/profil-1.webp"
                       alt="Dokumentasi-Narsum1"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -264,7 +264,7 @@ export default function Home() {
 
                   <div className="relative h-full w-full rounded-md border-4 border-white overflow-hidden shadow-lg z-10 bg-gray-200">
                     <img
-                      src="/images/profil-2.jpeg"
+                      src="/images/profil-2.webp"
                       alt="Dokumentasi-Narsum2"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -299,7 +299,7 @@ export default function Home() {
             <div className="text-center group">
               <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border border-gray-200 group-hover:border-red-200 transition-colors">
                 <img
-                  src="/images/man (1).png"
+                  src="/images/man (1).webp"
                   alt="H. Adib Ali Rahbini"
                   className="w-full h-full object-cover"
                 />
@@ -319,7 +319,7 @@ export default function Home() {
             <div className="text-center group">
               <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border border-gray-200 group-hover:border-red-200 transition-colors">
                 <img
-                  src="/images/woman.png"
+                  src="/images/woman.webp"
                   alt="Nurul Intan Syafira"
                   className="w-full h-full object-cover"
                 />
@@ -339,7 +339,7 @@ export default function Home() {
             <div className="text-center group">
               <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border border-gray-200 group-hover:border-red-200 transition-colors">
                 <img
-                  src="/images/man (2).png"
+                  src="/images/man (2).webp"
                   alt="Mohamad Paesol"
                   className="w-full h-full object-cover"
                 />
@@ -359,7 +359,7 @@ export default function Home() {
             <div className="text-center group">
               <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden border border-gray-200 group-hover:border-red-200 transition-colors">
                 <img
-                  src="/images/man (3).png"
+                  src="/images/man (3).webp"
                   alt="Yumas Adi Putra"
                   className="w-full h-full object-cover"
                 />
@@ -402,7 +402,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden group flex flex-col h-full">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="/images/rapat-1.jpeg"
+                  src="/images/rapat-1.webp"
                   alt="Rapat"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -433,7 +433,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden group flex flex-col h-full">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="/images/adib-2p.jpeg"
+                  src="/images/adib-2p.webp"
                   alt="Presentasi Kejujuran UMKM"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -464,7 +464,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden group flex flex-col h-full">
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="images/materi-1.png"
+                  src="images/materi-1.webp"
                   alt="Sosmed"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

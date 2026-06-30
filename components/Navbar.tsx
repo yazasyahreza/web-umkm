@@ -18,12 +18,11 @@ export default function Navbar() {
     <header className="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group z-50">
-          <div className="w-9 h-9 bg-red-600 text-white flex items-center justify-center font-bold text-lg rounded-sm group-hover:bg-red-700 transition-colors">
-            A
-          </div>
-          <span className="font-extrabold text-xl text-gray-900 tracking-tight">
-            ARANG
-          </span>
+          <img
+            src="/images/logo-arang.webp"
+            alt="Logo Komunitas Arang"
+            className="h-10 w-auto object-contain"
+          />
         </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-500">

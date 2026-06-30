@@ -80,7 +80,7 @@ export default function MateriInkubasi() {
     <div className="bg-gray-50 min-h-screen pb-24 text-gray-900 font-sans">
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         <img
-          src="/images/hero-3.jpeg"
+          src="/images/hero-3.webp"
           alt="Banner Materi"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-50"
         />

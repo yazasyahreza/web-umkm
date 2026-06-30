@@ -6,7 +6,7 @@ export default function TentangKomunitas() {
       {/* --- BANNER HEADER --- */}
       <section className="relative w-full h-[45vh] min-h-[350px] pt-20 overflow-hidden bg-gray-100">
         <img
-          src="/images/hero-2.jpeg"
+          src="/images/hero-2.webp"
           alt="Banner Tentang Kami"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -47,7 +47,7 @@ export default function TentangKomunitas() {
           <div className="lg:col-span-5 relative group">
             <div className="absolute inset-0 bg-red-600 rounded-2xl transform rotate-3 scale-105 opacity-20 transition-transform duration-700 group-hover:rotate-6"></div>
             <img
-              src="/images/rapat-1.jpeg"
+              src="/images/rapat-1.webp"
               alt="Kegiatan Komunitas"
               className="relative z-10 w-full h-full object-cover rounded-2xl border-4 border-white shadow-xl grayscale group-hover:grayscale-0 transition-all duration-700"
             />

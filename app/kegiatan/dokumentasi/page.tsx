@@ -104,10 +104,10 @@ export default function DokumentasiPertemuan() {
       narasumber: "H. Adib Ali Rahbini, Lc., M.Pd.",
       instansi: "Kepala MTs Miftahul Hasan",
       images: [
-        "/images/adib-1p.jpeg",
-        "/images/adib-2p.jpeg",
-        "/images/adib-3p.jpeg",
-        "/images/adib-4p.jpeg",
+        "/images/adib-1p.webp",
+        "/images/adib-2p.webp",
+        "/images/adib-3p.webp",
+        "/images/adib-4p.webp",
       ],
       tag: "Etika Bisnis",
     },
@@ -117,9 +117,9 @@ export default function DokumentasiPertemuan() {
       narasumber: "Nurul I. Syafira, M.Psi.",
       instansi: "Dosen Inst. Ahmad Dahlan",
       images: [
-        "/images/syafira-1p.jpeg",
-        "/images/syafira-2p.jpeg",
-        "/images/syafira-3p.jpeg",
+        "/images/syafira-1p.webp",
+        "/images/syafira-2p.webp",
+        "/images/syafira-3p.webp",
       ],
       tag: "Pemasaran",
     },
@@ -129,10 +129,10 @@ export default function DokumentasiPertemuan() {
       narasumber: "M. Paesol, S.I.Kom, M.Pd.",
       instansi: "Dosen IAI Nurul Huda",
       images: [
-        "/images/paesol-1p.jpeg",
-        "/images/paesol-2p.jpeg",
-        "/images/paesol-3p.jpeg",
-        "/images/paesol-4p.jpeg",
+        "/images/paesol-1p.webp",
+        "/images/paesol-2p.webp",
+        "/images/paesol-3p.webp",
+        "/images/paesol-4p.webp",
       ],
       tag: "Digital Marketing",
     },
@@ -141,7 +141,7 @@ export default function DokumentasiPertemuan() {
       title: "Pentingnya Legalitas Usaha & Administrasi PIRT UMKM",
       narasumber: "Yumas Adi P., S.H., M.Pd.",
       instansi: "Dosen IAI Nurul Huda Situbondo",
-      images: ["/images/yumas-1p.jpeg"],
+      images: ["/images/yumas-1p.webp"],
       tag: "Legalitas & Administrasi",
     },
   ];
@@ -150,7 +150,7 @@ export default function DokumentasiPertemuan() {
     <div className="bg-gray-50 min-h-screen pb-24 text-gray-900 font-sans">
       <section className="relative w-full h-[35vh] min-h-[300px] pt-20 overflow-hidden">
         <img
-          src="/images/hero-3.jpeg"
+          src="/images/hero-3.webp"
           alt="Banner Rapat"
           className="absolute inset-0 w-full h-full object-cover object-center grayscale opacity-60"
         />
