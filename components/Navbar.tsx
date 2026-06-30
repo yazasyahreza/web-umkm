@@ -11,6 +11,8 @@ export default function Navbar() {
   const isKegiatanActive = pathname.startsWith("/kegiatan");
   const isBerandaActive = pathname === "/";
   const isTentangActive = pathname === "/tentang";
+  const isNarasumberActive = pathname === "/narasumber";
+  const isGaleriActive = pathname === "/galeri";
 
   return (
     <header className="w-full fixed top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
@@ -54,12 +56,6 @@ export default function Navbar() {
             </button>
             <div className="absolute top-full left-0 mt-2 w-52 bg-white shadow-xl border border-gray-100 rounded-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link
-                href="/kegiatan/jadwal"
-                className={`block px-4 py-3 text-sm hover:bg-gray-50 border-b border-gray-50 ${pathname === "/kegiatan/jadwal" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
-              >
-                Jadwal Pertemuan
-              </Link>
-              <Link
                 href="/kegiatan/dokumentasi"
                 className={`block px-4 py-3 text-sm hover:bg-gray-50 border-b border-gray-50 ${pathname === "/kegiatan/dokumentasi" ? "text-red-600 font-semibold" : "hover:text-red-600"}`}
               >
@@ -82,13 +78,22 @@ export default function Navbar() {
 
           <Link
             href="/narasumber"
-            className="hover:text-gray-900 transition-colors"
+            className={
+              isNarasumberActive
+                ? "text-gray-900 font-semibold"
+                : "hover:text-gray-900 transition-colors"
+            }
           >
             Narasumber
           </Link>
+
           <Link
             href="/galeri"
-            className="hover:text-gray-900 transition-colors"
+            className={
+              isGaleriActive
+                ? "text-gray-900 font-semibold"
+                : "hover:text-gray-900 transition-colors"
+            }
           >
             Galeri
           </Link>
@@ -165,13 +170,6 @@ export default function Navbar() {
             <span className="block text-gray-900 font-bold mb-2">Kegiatan</span>
             <div className="pl-4 space-y-2 border-l-2 border-red-100">
               <Link
-                href="/kegiatan/jadwal"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-1 text-sm text-gray-600 hover:text-red-600"
-              >
-                Jadwal Pertemuan
-              </Link>
-              <Link
                 href="/kegiatan/dokumentasi"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block py-1 text-sm text-gray-600 hover:text-red-600"
@@ -198,14 +196,15 @@ export default function Navbar() {
           <Link
             href="/narasumber"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 text-gray-700 font-medium"
+            className={`block py-2 ${isNarasumberActive ? "text-red-600 font-bold" : "text-gray-700 font-medium"}`}
           >
             Narasumber
           </Link>
+
           <Link
             href="/galeri"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 text-gray-700 font-medium"
+            className={`block py-2 ${isGaleriActive ? "text-red-600 font-bold" : "text-gray-700 font-medium"}`}
           >
             Galeri
           </Link>
